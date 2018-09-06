@@ -8,14 +8,14 @@ import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Livro {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
-	
+
 	@NotBlank
 	private String nome;
-	
+
 	@NotBlank
 	private int quantidadePaginas;
 
@@ -42,5 +42,5 @@ public class Livro {
 	public void setQuantidadePaginas(int quantidadePaginas) {
 		this.quantidadePaginas = quantidadePaginas;
 	}
-	
+
 }
